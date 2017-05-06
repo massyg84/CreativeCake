@@ -48,5 +48,18 @@ section.classSectionPrenotazione {
     .noBottomBorder {
       border: 0;
     }
-    
 
+/* 
+    La proprietà di cui abbiamo bisogno è 
+    @font-face, una delle regole appartenenti alle @-rules. 
+    Con questa proprietà è possibile, infatti, 
+    caricare all’interno delle pagine web font non standard 
+    salvati fisicamente all’interno della directory del sito web. 
+    Questo ci consente, quindi, di visualizzare correttamente il 
+    font su tutti i browser anche quando esso non è installato 
+    all’interno del PC dell’utente.   
+*/
+ @font-face {
+  font-family: 'Josefin Sans';
+  src: local('Josefin Sans'), url('../Font/JosefinSans.woff2') format('woff2');
+}
