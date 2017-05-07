@@ -149,5 +149,11 @@ li.classOrizontalNav{
     border-radius: 3px;
     float: left;
 }
-
-
+.classDivContatti{
+/*    border: dotted;*/
+    margin: 25px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 30%;
+    padding: 1px;
+}

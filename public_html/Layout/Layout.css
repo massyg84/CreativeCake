@@ -34,6 +34,14 @@ nav.mainPage {
     /*border: dotted;*/
 }
 
+.classMainContatti{
+    border: dotted; 
+    width: 100%;
+    display: inline-block;
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+    padding-left: 10%;
+}
 
 section.classSectionPrenotazione {
       width: 400px;
