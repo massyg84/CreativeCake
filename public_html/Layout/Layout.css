@@ -39,8 +39,6 @@ section.classSectionPrenotazione {
       width: 400px;
       height: 230px;
       margin: 0 auto;
-/*      border-left: 1px solid #ccc;
-      border-right: 1px solid #ccc;*/
       margin-top: 10px;
       padding: 15px;
       padding-top: 5px;
@@ -48,7 +46,6 @@ section.classSectionPrenotazione {
 
 .lastSection {
       border-bottom: 1px solid #ccc;
-      height: 185px;
     }
 .longLine {
       height: 70px;
