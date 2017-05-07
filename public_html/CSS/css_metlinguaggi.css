@@ -127,3 +127,34 @@ li.classOrizontalNav{
     /*allineo titoletto a sinistra*/ 
     text-align: left;
 }
+/*
+ SEZIONE RELATIVA ALLA PRENOTAZIONE DELL'EVENTO E PIU' PRECISAMENTE
+ AL LAYOUT DEL MENU A TENDINA (SELECT-OPTION)
+*/
+select option{
+    font-size: 19pt;
+}
+
+.select_join {
+    width: 250px;
+    height: 28px;
+    overflow: hidden;
+    border: #BEBEBE 1px solid;
+    border-radius: 3px;
+    
+}
+
+.select_join select {
+    background: transparent;
+    width: 170px;
+    font-size:7pt;
+    color:grey;
+    border: 0;
+    border-radius: 0;
+    height: 28px;
+    /*-webkit-appearance: none;*/
+}
+.select_join select:focus {
+    outline: none;
+}
+
