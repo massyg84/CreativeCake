@@ -111,3 +111,25 @@ li.classOrizontalNav{
     margin: 5%;
     height: 90px;
 }
+.classDaily{
+    margin: 25px;
+    width: 25%;
+    height: 300px;
+    float: left;
+    padding: 1px;
+    /*border: dotted;*/
+}
+.classPDaily{
+    text-align: justify;
+    margin: 5%;
+    height: 90px;
+    font-size: 18px;
+    
+}
+.classH2Daily{
+    margin-top: auto;
+        margin-left: 5%;
+        color: violet;
+        /*allineo titoletto a sinistra*/ 
+        text-align: left;
+}
