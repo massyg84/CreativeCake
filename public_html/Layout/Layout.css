@@ -16,6 +16,15 @@ nav.mainPage {
          margin-right: auto;
          /*border: dotted;*/
         }
+ 
+.classMainProd{
+    
+         width: 90%;
+         display: inline-block;
+         margin-left: auto;
+         margin-right:auto;
+         /*border: dotted;*/
+        }
 
 .classDivHome{
     font-size: 17px;

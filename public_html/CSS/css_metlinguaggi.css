@@ -83,14 +83,22 @@ li.classOrizontalNav{
     
    
 .classGallery{
-    display: inline-block;
-    /*width: 200px;*/
+/*    display: inline-block;
+    width: 200px;
     width: 15%;
     margin: 2%;
-    /*border: dotted;*/
+    border: dotted;
+    height: auto;*/
+    margin: 25px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 300px;
+    padding: 1px;
+   
 }
 .classH3Prod{
         margin-top: auto;
+        margin-left: 5%;
         color: violet;
         /*allineo titoletto a sinistra*/ 
         text-align: left;
@@ -100,4 +108,6 @@ li.classOrizontalNav{
 }
 .classPProd{
     text-align: justify;
+    margin: 5%;
+    height: 90px;
 }
