@@ -83,12 +83,6 @@ li.classOrizontalNav{
     
    
 .classGallery{
-/*    display: inline-block;
-    width: 200px;
-    width: 15%;
-    margin: 2%;
-    border: dotted;
-    height: auto;*/
     margin: 25px;
     border: 1px solid #ccc;
     float: left;
@@ -97,11 +91,11 @@ li.classOrizontalNav{
    
 }
 .classH3Prod{
-        margin-top: auto;
-        margin-left: 5%;
-        color: violet;
-        /*allineo titoletto a sinistra*/ 
-        text-align: left;
+    margin-top: auto;
+    margin-left: 5%;
+    color: violet;
+    /*allineo titoletto a sinistra*/ 
+    text-align: left;
  }
 .classImgProd{
     width: 100%;
@@ -128,8 +122,8 @@ li.classOrizontalNav{
 }
 .classH2Daily{
     margin-top: auto;
-        margin-left: 5%;
-        color: violet;
-        /*allineo titoletto a sinistra*/ 
-        text-align: left;
+    margin-left: 5%;
+    color: violet;
+    /*allineo titoletto a sinistra*/ 
+    text-align: left;
 }
