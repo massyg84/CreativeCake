@@ -15,9 +15,20 @@ and open the template in the editor.
         <link rel="stylesheet" type="text/css" href="../CSS/css_metlinguaggi.css">
         <link rel="stylesheet" type="text/css" href="../Layout/Layout.css">
     </head>
-    
+   
+ 
     <body>
-        
+     <script>
+        function valida_e_prenota_form() {
+        var evento = document.forms["form_prenotazione"]["evento_da_prenotare"].value ;
+        if (evento === "") { 
+        alert("scegli un evento"); 
+        return false;
+        }else{
+        alert("prenotazione avvenuta con successo"); 
+    }
+    }
+    </script>   
         <div class="classH1"></div>
         
         <header> 
@@ -39,15 +50,18 @@ and open the template in the editor.
         
         <center>
              <!--onsubmit="return valida_form()" method="post"-->
-        <form name="forma_da_validare" action="prenotazione.html"> 
+        <form name="form_prenotazione" action="prenotazione.html" onsubmit="return valida_e_prenota_form()"> 
             
                 
         <section class="classSectionPrenotazione">
-            
+          
+         <fieldset>
+             <div style="color: green"> prenotazione effettuata con successo</div>
+        </fieldset>
          <fieldset>
             <label>Evento</label>
-            <select class="select_join" name="argomento_preferito">
-                <option>-- Seleziona Evento --</option>
+            <select class="select_join" name="evento_da_prenotare">
+                <option value="">-- Seleziona Evento --</option>
                 <option value="Evento1">Evento1</option> 
                 <option value="Evento2">Evento2</option> 
                 <option value="Evento3">Evento3</option>
@@ -77,7 +91,7 @@ and open the template in the editor.
             <label>Richieste</label><textarea name="commenti" id="commenti" placeholder="cercheremo di esaudire le tue richieste" maxlength="100" wrap="soft"></textarea>
 	</fieldset>
 	<fieldset class="noBottomBorder">
-            <button name="prenota" id="prenota">Invia Prenotazione</button>
+            <button name="prenota" id="prenota"  type="submit">Invia Prenotazione</button>
 	</fieldset>
         </section>
         </form>
