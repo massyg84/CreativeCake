@@ -43,6 +43,7 @@ li.classOrizontalNav{
     margin-right: 17px;
         }
 
+     
 /*
  *   classe relativa alle immagini prima di header e dopo il footer
  */
@@ -127,6 +128,14 @@ li.classOrizontalNav{
     /*allineo titoletto a sinistra*/ 
     text-align: left;
 }
+.classImgDaily{
+    margin-left: 6%;
+    width: auto;
+    height: auto;
+    float: left;
+    /*border: dotted;*/
+}
+
 /*
  SEZIONE RELATIVA ALLA PRENOTAZIONE DELL'EVENTO E PIU' PRECISAMENTE
  AL LAYOUT DEL MENU A TENDINA (SELECT-OPTION)
