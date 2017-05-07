@@ -35,7 +35,8 @@ and open the template in the editor.
         
         <center><img src="../Img/divisore.png" style="width: 45%" alt="logo"/></center>
         
-        <br><br>
+        <br>
+        
         <section class="classMainContatti">
             <div class="classDivContatti">
                 <h2>Chiamateci</h2>
@@ -54,27 +55,32 @@ and open the template in the editor.
                     </p>
                 
             </div>
-            <div class="classDivContatti">
+            <div class="classDivEmail">
                 <h2>Scriveteci</h2>
-                <form name="scrivici" action="conatti.html"> 
-                    <div>
-                        <p>Nome</p>
+                <form name="scrivici" action="contatti.html"> 
+                    <div class="classDivFormContatti">
+                        <label class="classLabelContatti">Nome</label>
+                   
+                        <input class="classInputContatti" type="text" name="nome" value="">
+                    </div><br>
+                    
+                    <div class="classDivFormContatti">
+                        <label class="classLabelContatti">Indirizzo email</label>
+                        <input class="classInputContatti" type="text" name="email" value="">
+                    </div><br>
+                    
+                    <div class="classDivFormContatti">
+                        <label class="classLabelContatti">Messaggio</label>
+                        <textarea class="classTAreaContatti" rows="6" cols="150" name="messaggio" placeholder="Inserisci il messaggio" maxlength="100"></textarea>
                     </div>
-                    <div>
-                        <input type="text" name="nome" value="">
+                    
+                    <div class="classDivFormContatti">
+                        
+                        <button class="classButtonContatti">Invia</button>
+                        <button class="classButtonContatti" type="reset">Reset</button>
+                        
                     </div>
-                    <div>
-                        <p>Indirizzo email</p>
-                    </div>
-                    <div>
-                        <input type="text" name="email" value="">
-                    </div>
-                    <div>
-                        <p>Messaggio</p>
-                    </div>
-                    <div>
-                        <textarea rows="5" cols="150" name="messaggio" placeholder="Inserisci il messaggio"></textarea>
-                    </div>
+                   
                 </form>
                 
             </div>

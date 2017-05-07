@@ -150,10 +150,60 @@ li.classOrizontalNav{
     float: left;
 }
 .classDivContatti{
-/*    border: dotted;*/
-    margin: 25px;
-    border: 1px solid #ccc;
+    /*border: dotted;*/
+    margin-top: 25px;
+    margin-left: 100px;
+    /*border: 1px solid #ccc;*/
     float: left;
-    width: 30%;
+    width: 20%;
     padding: 1px;
+}
+.classDivFormContatti{
+   clear: left;
+   height: 25px;
+    
+    
+}
+.classLabelContatti{
+    font-weight: bold;
+    width: 150px;
+    float: left;
+    font-size: 20px;
+}
+.classDivEmail{
+    margin-top: 25px;
+    margin-left: 100px;
+    /*border: 1px solid #ccc;*/
+    float: left;
+    width: 60%;
+    padding: 1px;
+    height: 400px;
+}
+.classInputContatti{
+     /*border: 1px solid #dcdcdc;*/
+      padding: 4px;
+      width: 400px;
+      height: 25px;
+      color: #444;
+      float: left;
+      margin-left: 10%;
+      font-size: 18px;
+}
+.classTAreaContatti{
+     /*border: 1px solid #dcdcdc;*/
+      padding: 4px;
+      width: 400px;
+      height: 150px;
+      color: #444;
+      float: left;
+      margin-left: 10%;
+      font-size: 18px;
+}
+.classButtonContatti{
+    font-weight: bold;
+    width: 150px;
+    margin-top: 25px;
+    margin-left: 50px;
+    font-size: 20px;
+    float: left;
 }

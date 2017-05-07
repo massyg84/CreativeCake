@@ -35,8 +35,8 @@ nav.mainPage {
 }
 
 .classMainContatti{
-    border: dotted; 
-    width: 100%;
+    /*border: dotted;*/ 
+    width: auto;
     display: inline-block;
     /*margin-left: auto;*/
     /*margin-right: auto;*/
