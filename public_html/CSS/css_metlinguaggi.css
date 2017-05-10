@@ -199,11 +199,54 @@ li.classOrizontalNav{
       margin-left: 10%;
       font-size: 18px;
 }
-.classButtonContatti{
+
+
+
+/*css relativo ai messaggi di errore e 
+successo per la prenotazione*/
+
+.error {
+    background: #FDE2E2;
+    width: 400px;
+    border: 1px solid #BE0000;
+    border-radius: 7px;
+    color: #BE0000;
     font-weight: bold;
+    padding: 5px;
+    font-size: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.completed {
+    background: #B3FFB0;
+    width: 400px;
+    border: 1px solid #178A08;
+    border-radius: 7px;
+    color: #19880A;
+    font-weight: bold;
+    padding: 5px;
+    font-size: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.notificheLogo {
+    vertical-align: middle;
+    margin-right: 10px;
+    height: 20px;
+    border: 0;
+}
+.classButton{
+    border-radius: 7px;
     width: 150px;
-    margin-top: 25px;
-    margin-left: 50px;
-    font-size: 20px;
-    float: left;
+    margin-top: 10px;
+    font-size: 15px;
+}
+.classButtonRipristina{
+    border-radius: 7px;
+    width: 150px;
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 15px;
 }
