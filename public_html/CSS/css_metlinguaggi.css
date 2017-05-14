@@ -48,10 +48,10 @@ li.classOrizontalNav{
  *   classe relativa alle immagini prima di header e dopo il footer
  */
 .classH1{
-    background-image: url(../Img/sfondo.jpg);
+    background-image: url(../Img/immagine_sfondo.jpg);
     background-repeat: repeat-x;
     width: 100%;
-    height: 100px;
+    height: 115px;
         }
 
  /*
@@ -94,7 +94,7 @@ li.classOrizontalNav{
 .classH3Prod{
     margin-top: auto;
     margin-left: 5%;
-    color: violet;
+    color: #ffb3b3;
     /*allineo titoletto a sinistra*/ 
     text-align: left;
  }
@@ -127,7 +127,7 @@ li.classOrizontalNav{
 .classH2Daily{
     margin-top: auto;
     margin-left: 5%;
-    color: violet;
+    color: #ffb3b3;
     /*allineo titoletto a sinistra*/ 
     text-align: left;
 }
@@ -207,7 +207,7 @@ li.classOrizontalNav{
     border-radius: 7px;
     width: 655px;
     height: 35px;
-    background-color: pink;
+    background-color: #ffb3b3;
     margin-top: 10px;
     font-size: 20px;
 }

@@ -13,7 +13,7 @@ nav.mainPage {
          display: inline-block;
          margin-left: auto;
          margin-right: auto;
-         border: dotted;
+         /*border: dotted;*/
         }
 .classMainDaily{
         width: 90%;
