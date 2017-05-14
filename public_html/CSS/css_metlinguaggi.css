@@ -60,7 +60,7 @@ li.classOrizontalNav{
     h1{
        text-align: center;
        margin: 50px;
-    }
+}
     
      fieldset {
       clear: left;
@@ -81,7 +81,10 @@ li.classOrizontalNav{
       color: #444;
       float: left;
     }
-    
+ 
+.classHPink{
+    color: #ffb3b3;
+}
    
 .classGallery{
     margin: 25px;
@@ -105,6 +108,13 @@ li.classOrizontalNav{
     text-align: justify;
     margin: 5%;
     height: 90px;
+}
+.classImgEvent{
+    border-radius: 7px; 
+    width: 100%;
+}
+.classH2Event{
+    color: #ffb3b3;
 }
 .classPEvent{
     font-size: large;
@@ -151,6 +161,7 @@ li.classOrizontalNav{
     border: #BEBEBE 1px solid;
     border-radius: 3px;
     float: left;
+    font-size:medium;
 }
 .classDivContatti{
     /*border: dotted;*/
@@ -253,6 +264,7 @@ successo per la prenotazione*/
     width: 150px;
     margin-top: 10px;
     font-size: 15px;
+    background-color: #ffb3b3;
 }
 .classButtonRipristina{
     border-radius: 7px;
@@ -260,4 +272,5 @@ successo per la prenotazione*/
     margin-left: 20px;
     margin-top: 10px;
     font-size: 15px;
+    background-color: #ffb3b3;
 }

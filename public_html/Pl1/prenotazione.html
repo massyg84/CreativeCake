@@ -51,7 +51,7 @@ and open the template in the editor.
         document.getElementById("messError").innerHTML ='Telefono è un campo obbligatorio';
         return prenotazione;
         }
-        if(typeof(telefono) === 'numero'){
+        if(typeof(telefono) !== 'numero'){
             document.getElementById("error").style.display = 'block';
             document.getElementById("messError").innerHTML ='Telefono non è scritto bene';
         return prenotazione;
@@ -60,6 +60,7 @@ and open the template in the editor.
         document.getElementById("error").style.display = 'none';
         document.getElementById("completed").style.display = 'block';
         
+        console.log(typeof(telefono));
         //da chiedere al professore
         return false;
         }
@@ -76,7 +77,7 @@ and open the template in the editor.
         <div class="classH1"></div>
         
         <header> 
-             <h1>Prenotazione</h1>
+             <h1 class="classHPink">Prenotazione</h1>
         
              <nav class="mainPage">
                 <ul>
@@ -109,9 +110,15 @@ and open the template in the editor.
             <label>Evento</label>
             <select class="select_join" id="evento_da_prenotare" name="evento_da_prenotare">
                 <option value="">-- Seleziona Evento --</option>
-                <option value="Evento1">Evento1</option> 
-                <option value="Evento2">Evento2</option> 
-                <option value="Evento3">Evento3</option>
+                <option value="Evento1">Cupfriday 05 Maggio</option> 
+                <option value="Evento2">Una merenda speciale 09 Maggio</option> 
+                <option value="Evento3">Cupfriday 12 Maggio</option>
+                <option value="Evento4">Festa della mamma</option>
+                <option value="Evento5">Cupfriday 19 Maggio</option>
+                <option value="Evento6">Cupcake Night 20 Maggio</option>
+                <option value="Evento7">Una merenda speciale 23 Maggio</option>
+                <option value="Evento8">Il nostro primo anno! 25 Maggio</option>
+                <option value="Evento9">Cupfriday 26 Maggio</option>
             </select>
 	</fieldset>
             
