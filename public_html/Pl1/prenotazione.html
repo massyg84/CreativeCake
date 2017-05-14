@@ -51,9 +51,11 @@ and open the template in the editor.
         document.getElementById("messError").innerHTML ='Telefono è un campo obbligatorio';
         return prenotazione;
         }
-        if(typeof(telefono) !== 'numero'){
+        // isNaN è una funzione che ritorna true se il parametro NON E' un numero altrimenti ritorna false
+        // inoltre faccio un controllo che il numero inserito non sia < 0 (parseInt ritorna il valore numerico del parametro
+        if (isNaN(telefono) || parseInt(telefono)<0){
             document.getElementById("error").style.display = 'block';
-            document.getElementById("messError").innerHTML ='Telefono non è scritto bene';
+            document.getElementById("messError").innerHTML ='Telefono è un campo numerico';
         return prenotazione;
         }
         prenotazione = true;
