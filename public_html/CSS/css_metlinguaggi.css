@@ -200,6 +200,14 @@ li.classOrizontalNav{
       font-size: 18px;
 }
 
+.classButtonSendEmail{
+    border-radius: 7px;
+    width: 655px;
+    height: 35px;
+    background-color: pink;
+    margin-top: 10px;
+    font-size: 20px;
+}
 
 
 /*css relativo ai messaggi di errore e 

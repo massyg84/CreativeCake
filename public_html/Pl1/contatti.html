@@ -41,45 +41,46 @@ and open the template in the editor.
             <div class="classDivContatti">
                 <h2>Chiamateci</h2>
                 <p>Tutta la settimana accettiamo ordinazioni speciali solo
-                    per telefono o direttamente in negozio
+                    per telefono o direttamente in negozio<br>
+                    Ci troviamo in <b>Via Catania 123</b><br>
                     Tel. 069876543</p>
+                
                 <h2>I nostri orari</h2>
                 <p>Lunedì a Domenica
                     Dalle 7 alle 20.
                     Per ordinazioni
                     dalle 7 alle 16.</p>
                 
-                    <h2>Eventi</h2>
-                    <p>Per prenotarsi agli eventi vai alla pagina <b>Prenotazioni</b>
-                        oppure clicca <a href="prenotazione.html"><b>qui.</b></a> 
-                    </p>
-                
+                <h2>Eventi</h2>
+                <p>Per prenotarsi agli eventi vai alla pagina <b>Prenotazioni</b>
+                   oppure clicca <a href="prenotazione.html"><b>qui.</b></a> 
+                </p>
             </div>
+            
             <div class="classDivEmail">
                 <h2>Scriveteci</h2>
-                <form method="post" name="scrivici" action="mailto:massyg84@gmail.com" enctype="text/plain" > 
+                <form method="post" name="contattaci" action="mailto:tania89.ls@gmail.com?subject=[Contattaci]" enctype="text/plain" > 
                     <div class="classDivFormContatti">
                         <label class="classLabelContatti">Nome</label>
-                        <!--<input type="text" name="subject" value="contattami CreativeCake" hidden="hidden"/>-->
-                        <input class="classInputContatti" type="text" name="nome" value="" required>
+                        <input class="classInputContatti" type="text" name="nome" id="nome" value="" required>
                     </div><br>
                     
                     <div class="classDivFormContatti">
                         <label class="classLabelContatti">Indirizzo email</label>
                         
-                        <input class="classInputContatti" type="text" name="email" value="" required>
+                        <input class="classInputContatti" type="email" name="email" value="" required>
                     </div><br>
                     
                     <div class="classDivFormContatti">
                         <label class="classLabelContatti">Messaggio</label>
                         
-                        <textarea class="classTAreaContatti" rows="6" cols="150" name="body" placeholder="Inserisci il messaggio" maxlength="100" required></textarea>
+                        <textarea class="classTAreaContatti" rows="6" cols="150" name="messaggio" placeholder="Inserisci il messaggio" maxlength="100" required></textarea>
                     </div>
                     
                     <div class="classDivFormContatti">
                         
-                        <button class="classButton" type="submit">Invia</button>
-                        <button class="classButtonRipristina" type="reset">Reset</button>
+                        <button class="classButtonSendEmail" type="submit">Invia</button>
+                        <!--<button class="classButtonRipristina" type="reset">Reset</button>-->
                         
                     </div>
                    
