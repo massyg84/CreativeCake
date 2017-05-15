@@ -7,6 +7,11 @@ nav.mainPage {
     line-height: 25px;
     margin-top: 15px;
     }
+    
+.classDivCenter{
+   text-align: center;
+   /*border: dotted;*/
+    }
 .classMain{
     
          width: 90%;
@@ -14,6 +19,7 @@ nav.mainPage {
          margin-left: auto;
          margin-right: auto;
          /*border: dotted;*/
+         text-align: center;
         }
 .classMainDaily{
         width: 90%;

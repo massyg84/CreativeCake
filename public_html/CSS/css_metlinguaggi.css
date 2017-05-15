@@ -91,7 +91,7 @@ li.classOrizontalNav{
     border: 1px solid #ccc;
     float: left;
     width: 300px;
-    padding: 1px;
+    
    
 }
 .classH3Prod{
@@ -118,11 +118,12 @@ li.classOrizontalNav{
 }
 .classPEvent{
     font-size: large;
+    text-align: justify;
 }
 .classDaily{
     margin: 25px;
     width: 25%;
-    height: 300px;
+    height: 240px;
     float: left;
     padding: 1px;
     /*border: dotted;*/
