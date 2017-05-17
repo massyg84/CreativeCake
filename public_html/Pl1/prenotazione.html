@@ -18,70 +18,68 @@ and open the template in the editor.
    
  
     <body>
-     <script>
-        function valida_e_prenota_form() {
-        if(document.getElementById("completed").style.display === "block"){
-            document.getElementById("completed").style.display = 'none';
-            return true;
-        }
-        else{
-        var evento = document.forms["form_prenotazione"]["evento_da_prenotare"].value ;
-        var nome = document.forms["form_prenotazione"]["nome"].value ;
-        var cognome = document.forms["form_prenotazione"]["cognome"].value ;
-        var telefono = document.forms["form_prenotazione"]["telefono"].value ;
-        var prenotazione = false;
-        document.getElementById("completed").style.display = 'none';
-        if (evento === "") { 
-        document.getElementById("error").style.display = 'block';
-        document.getElementById("messError").innerHTML ='Seleziona l\'Evento a cui vuoi partecipare';
-        return prenotazione;
-        }
-        else if (nome === "") { 
-        document.getElementById("error").style.display = 'block';
-        document.getElementById("messError").innerHTML ='Nome è un campo obbligatorio';
-        return prenotazione;
-        }
-        else if (cognome === "") { 
-        document.getElementById("error").style.display = 'block';
-        document.getElementById("messError").innerHTML ='Cognome è un campo obbligatorio';
-        return prenotazione;
-        }
-        else if (telefono === "") { 
-        document.getElementById("error").style.display = 'block';
-        document.getElementById("messError").innerHTML ='Telefono è un campo obbligatorio';
-        return prenotazione;
-        }
+        <script>
+            function valida_e_prenota_form() {
+                if(document.getElementById("completed").style.display === "block"){
+                document.getElementById("completed").style.display = 'none';
+                return true;
+                }
+                else{
+                var evento = document.forms["form_prenotazione"]["evento_da_prenotare"].value ;
+                var nome = document.forms["form_prenotazione"]["nome"].value ;
+                var cognome = document.forms["form_prenotazione"]["cognome"].value ;
+                var telefono = document.forms["form_prenotazione"]["telefono"].value ;
+                var prenotazione = false;
+                document.getElementById("completed").style.display = 'none';
+                if (evento === "") { 
+                document.getElementById("error").style.display = 'block';
+                document.getElementById("messError").innerHTML ='Seleziona l\'Evento a cui vuoi partecipare';
+                return prenotazione;
+                }
+                else if (nome === "") { 
+                document.getElementById("error").style.display = 'block';
+                document.getElementById("messError").innerHTML ='Nome è un campo obbligatorio';
+                return prenotazione;
+                }
+                else if (cognome === "") { 
+                document.getElementById("error").style.display = 'block';
+                document.getElementById("messError").innerHTML ='Cognome è un campo obbligatorio';
+                return prenotazione;
+                }
+                else if (telefono === "") { 
+                document.getElementById("error").style.display = 'block';
+                document.getElementById("messError").innerHTML ='Telefono è un campo obbligatorio';
+                return prenotazione;
+                }
         // isNaN è una funzione che ritorna true se il parametro NON E' un numero altrimenti ritorna false
         // inoltre faccio un controllo che il numero inserito non sia < 0 (parseInt ritorna il valore numerico del parametro
-        if (isNaN(telefono) || parseInt(telefono)<0){
-            document.getElementById("error").style.display = 'block';
-            document.getElementById("messError").innerHTML ='Telefono è un campo numerico';
-        return prenotazione;
-        }
-        prenotazione = true;
-        document.getElementById("error").style.display = 'none';
-        document.getElementById("completed").style.display = 'block';
+                if (isNaN(telefono) || parseInt(telefono)<0){
+                document.getElementById("error").style.display = 'block';
+                document.getElementById("messError").innerHTML ='Telefono è un campo numerico';
+                return prenotazione;
+                }
+                prenotazione = true;
+                document.getElementById("error").style.display = 'none';
+                document.getElementById("completed").style.display = 'block';
         
-        console.log(typeof(telefono));
+                console.log(typeof(telefono));
         //da chiedere al professore
-        return false;
-        }
-    }
-    function reset_form(){
-         document.getElementById("completed").style.display = 'none';
-         document.getElementById("error").style.display = 'none';
+                return false;
+                }
+            }
+            function reset_form(){
+                document.getElementById("completed").style.display = 'none';
+                document.getElementById("error").style.display = 'none';
          
-        document.getElementById("form_prenotazione").reset();
-         
-        
-    }
-    </script>   
+                 document.getElementById("form_prenotazione").reset();
+            }
+        </script>   
         <div class="classH1"></div>
         
         <header> 
-             <h1 class="classHPink">Prenotazione</h1>
+            <h1 class="classHPink">Prenotazione</h1>
         
-             <nav class="mainPage">
+            <nav class="mainPage">
                 <ul>
                     <li class="classOrizontalNav"><a  href="../index.html">Home</a> <span class="classSpan"></span></li>
                     <li class="classOrizontalNav"><a  href="produzione.html">La nostra Produzione</a> <span class="classSpan"></span></li>
@@ -98,69 +96,66 @@ and open the template in the editor.
         <div class="classDivCenter">
             
             <form id="form_prenotazione" name="form_prenotazione"  onsubmit="return valida_e_prenota_form()" onreset=""> 
-            <div id="error" class="error" style="display: none">
-                <img src="../Img/error.png" class="notificheLogo" alt="errorImg"/><span id="messError"></span>
-            </div>    
-            <div id="completed" class="completed" style="display: none">
-                <img src="../Img/ok.gif" class="notificheLogo" alt="okImg"/> 
-                Prenotazione effettuata con successo
-            </div>    
-        <section class="classSectionPrenotazione">
+                <div id="error" class="error" style="display: none">
+                    <img src="../Img/error.png" class="notificheLogo" alt="errorImg"/><span id="messError"></span>
+                </div>    
+                <div id="completed" class="completed" style="display: none">
+                    <img src="../Img/ok.gif" class="notificheLogo" alt="okImg"/> 
+                    Prenotazione effettuata con successo
+                </div>    
+                <section class="classSectionPrenotazione">
           
         
-         <fieldset>
-            <label>Evento</label>
-            <select class="select_join" id="evento_da_prenotare" name="evento_da_prenotare">
-                <option value="">-- Seleziona Evento --</option>
-                <option value="Evento1">Cupfriday 05 Maggio</option> 
-                <option value="Evento2">Una merenda speciale 09 Maggio</option> 
-                <option value="Evento3">Cupfriday 12 Maggio</option>
-                <option value="Evento4">Festa della mamma</option>
-                <option value="Evento5">Cupfriday 19 Maggio</option>
-                <option value="Evento6">Cupcake Night 20 Maggio</option>
-                <option value="Evento7">Una merenda speciale 23 Maggio</option>
-                <option value="Evento8">Il nostro primo anno! 25 Maggio</option>
-                <option value="Evento9">Cupfriday 26 Maggio</option>
-            </select>
-	</fieldset>
+                    <fieldset>
+                        <label>Evento</label>
+                        <select class="select_join" id="evento_da_prenotare" name="evento_da_prenotare">
+                            <option value="">-- Seleziona Evento --</option>
+                            <option value="Evento1">Cupfriday 05 Maggio</option> 
+                            <option value="Evento2">Una merenda speciale 09 Maggio</option> 
+                            <option value="Evento3">Cupfriday 12 Maggio</option>
+                            <option value="Evento4">Festa della mamma</option>
+                            <option value="Evento5">Cupfriday 19 Maggio</option>
+                            <option value="Evento6">Cupcake Night 20 Maggio</option>
+                            <option value="Evento7">Una merenda speciale 23 Maggio</option>
+                            <option value="Evento8">Il nostro primo anno! 25 Maggio</option>
+                            <option value="Evento9">Cupfriday 26 Maggio</option>
+                        </select>
+                    </fieldset>
             
-        <fieldset>
-            <label>Nome</label><input name="nome" id="nome" type="tel" >
-        </fieldset>
+                    <fieldset>
+                        <label>Nome</label><input name="nome" id="nome" type="tel" >
+                    </fieldset>
         
-        <fieldset>
-            <label>Cognome</label><input name="cognome" id="cognome" type="text" >
-	</fieldset>
+                    <fieldset>
+                        <label>Cognome</label><input name="cognome" id="cognome" type="text" >
+                    </fieldset>
 	
-        <fieldset>
-            <label>N° Cellulare</label><input name="telefono" id="telefono" type="text" >
-	</fieldset>
+                    <fieldset>
+                        <label>N° Cellulare</label><input name="telefono" id="telefono" type="text" >
+                    </fieldset>
 	
-        <fieldset>
-            <label>N° Persone</label><input name="persone" id="persone" type="number" placeholder="1">
-        </fieldset>
+                    <fieldset>
+                        <label>N° Persone</label><input name="persone" id="persone" type="number" placeholder="1">
+                    </fieldset>
+                </section>
+                <section class="lastSection classSectionPrenotazione">
+                    <h2>Informazioni extra</h2>
+                    <fieldset class="longLine">
+                        <label>Richieste</label><textarea rows="4" cols="100" name="commenti" id="commenti" placeholder="cercheremo di esaudire le tue richieste" maxlength="100" wrap="soft"></textarea>
+                    </fieldset>
+                    <fieldset class="noBottomBorder">
+                    <button class="classButton" type="submit" >Prenota evento</button>
+                    <button class="classButtonRipristina" type="button" onclick="reset_form()" >Ripristina</button>
+                    </fieldset>
+                </section>
+            </form>
+        </div>
         
-        </section>
-        <section class="lastSection classSectionPrenotazione">
-            <h2>Informazioni extra</h2>
-	<fieldset class="longLine">
-            <label>Richieste</label><textarea rows="4" cols="100" name="commenti" id="commenti" placeholder="cercheremo di esaudire le tue richieste" maxlength="100" wrap="soft"></textarea>
-	</fieldset>
-	<fieldset class="noBottomBorder">
-            <button class="classButton" type="submit" >Prenota evento</button>
-            <button class="classButtonRipristina" type="button" onclick="reset_form()" >Ripristina</button>
-	</fieldset>
-        </section>
-        </form>
-        </div>    
-                   
-       
-       <br><br>
+        <br><br>
         
         <footer>
                 <small>Creative Cake © 2017 Design by Tania Web Designer </small>
         </footer>
         <div class="classH1"></div>
-        
     </body>
-    </html>
+</html>
