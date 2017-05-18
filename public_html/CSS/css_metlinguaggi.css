@@ -89,7 +89,7 @@ li.classOrizontalNav{
 .classGallery{
     margin: 25px;
     border: 1px solid #ccc;
-    float: left;
+    display: inline-block;
     width: 300px;
     
    
@@ -143,10 +143,8 @@ li.classOrizontalNav{
     text-align: left;
 }
 .classImgDaily{
-    margin-left: 6%;
     width: auto;
     height: auto;
-    float: left;
     /*border: dotted;*/
 }
 
@@ -231,6 +229,8 @@ successo per la prenotazione*/
 .error {
     background: #FDE2E2;
     width: 400px;
+    margin-left: auto;
+    margin-right: auto;
     border: 1px solid #BE0000;
     border-radius: 7px;
     color: #BE0000;
@@ -239,11 +239,14 @@ successo per la prenotazione*/
     font-size: 100%;
     margin-top: 10px;
     margin-bottom: 10px;
-}
+    display: none;
+    }
 
 .completed {
     background: #B3FFB0;
     width: 400px;
+    margin-left: auto;
+    margin-right: auto;
     border: 1px solid #178A08;
     border-radius: 7px;
     color: #19880A;
@@ -252,6 +255,7 @@ successo per la prenotazione*/
     font-size: 100%;
     margin-top: 10px;
     margin-bottom: 10px;
+    display: none;
 }
 
 .notificheLogo {
