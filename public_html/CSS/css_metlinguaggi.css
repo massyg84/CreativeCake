@@ -171,11 +171,12 @@ input, textarea {
 .classDivContatti{
     /*border: dotted;*/
     margin-top: 25px;
-    margin-left: 10%;
+    margin-left: 15%;
     /*border: 1px solid #ccc;*/
-    display: inline-block;
-    width: 20%;
+    float: left;
+    width: 300px;
     padding: 1px;
+    text-align: justify;
 }
 .classDivFormContatti{
     clear: left;
@@ -189,10 +190,10 @@ input, textarea {
 }
 .classDivEmail{
     margin-top: 25px;
-    margin-left: 7%;
     /*border: 1px solid #ccc;*/
     display: inline-block;
-    width: 50%;
+    width: 750px;
+    text-align: justify;
     padding: 1px;
     height: 400px;
 }
@@ -289,6 +290,22 @@ successo per la prenotazione*/
     width: auto;
     height: auto;
     /*border: dotted;*/
+    font-family: 'Josefin Sans', Helvetica, Arial, sans-serif;
+}
+
+.classButtonAvanti{
+    margin-top: 5px;
+    margin-right: 15%;
+    float: right;
+    border-color: transparent ;
+    background-color: transparent
+}
+.classButtonIndietro{
+    margin-top: 5px;
+    margin-left: 15% ;
+    float: left;
+    border-color: transparent ;
+    background-color: transparent
 }
 
 /*
@@ -306,7 +323,8 @@ successo per la prenotazione*/
     border: 1px solid #ccc;
     border-radius: 7px;
     width: 80%;
-    height: 480px;
+    /*altezza fissa altrimenti le immaggini cambiano il layout*/
+    height: 460px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;

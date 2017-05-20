@@ -27,8 +27,8 @@ nav.mainPage {
 * Con le proprietà display:table e display:table-cell i div 
 * hanno un comportamento molto simile a quello di una tabella e le celle contenute; 
 * infatti il div con la proprietà display:table-cell viene a espandersi come fa una 
-* cella dentro la tabella ed assegnandoli anche la proprietà 
-* vertical-align:midddle il testo al suo interno si centrerà verticalmente. 
+* cella dentro la tabella ed assegnandogli anche la proprietà 
+* vertical-align:center il testo al suo interno si centrerà verticalmente. 
 */
 .classMainDaily{
     width: 60%;
@@ -53,22 +53,21 @@ nav.mainPage {
     display: inline-block;
     margin-left: 8%;
     text-align: justify;
-/*    border: dotted;*/
+    /*    border: dotted;*/
 }
 
 .classMainContatti{
     /*border: dotted;*/ 
-    width: auto;
+    width: 80%;
     display: inline-block;
     text-align: justify;
     /*margin-left: auto;*/
     /*margin-right: auto;*/
-    padding-left: 10%;
+    
 }
 .classMainGallery{
     /*border: dotted;*/ 
     width: 60%;
-    position: relative;
     margin-left: auto;
     margin-right: auto;  
 }
@@ -112,8 +111,4 @@ section.classSectionPrenotazione {
 @font-face {
     font-family: 'Josefin Sans';
     src: local('Josefin Sans'), url('../Font/JosefinSans.woff2') format('woff2');
-}
-
-footer{
-    clear: left;
 }

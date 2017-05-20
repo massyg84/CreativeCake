@@ -17,12 +17,17 @@ and open the template in the editor.
     </head>
     <body>
         <script>
-            /* variabile messa in sessione utile per la visualizzazione e lo scorrimento
+            /* 
+             *   variabile messa in sessione utile per la visualizzazione e lo scorrimento
              *   delle foto nella gallery
              */
             var contatore = 1;
         </script>
 
+        <!-- 
+            div relativo all'immagine cornice presente agli estremi 
+            verticali di tutte le pagine presenti nel sito 
+        -->
         <div class="classH1"></div>
         <header>
             <h1 class="classHPink"> Gallery </h1>
@@ -37,42 +42,60 @@ and open the template in the editor.
                 <li class="classOrizontalNav"><a  href="prenotazione.html">Prenotazione</a> <span class="classSpan"></span></li>
             </ul>
         </nav>
+
         <div class="classDivCenter"><img src="../Img/divisore.png" style="width: 45%" alt="divisore"/></div>
 
-
+        <br>
         <div class="classDivCenter">
+
+
             <div class="classMainGallery">
+
                 <section class="classSectionGallery">
                     <figure class="classFigureGallery">
+                        <!--
+                            immagine iniziale è Foto1, tramite il javasctipt 
+                            sarà cambiata dinamicamente
+                        -->
                         <img id="imgGallery" class="classImgGallery" src="../Img/Gallery/PageGallery/Foto1.jpg" alt="foto1" style="border-radius: 7px">
+                        <!--didascalia iniziale -->
                         <figcaption><span id="figCaptionText">La location</span></figcaption>
+
                     </figure>   
                 </section>
-                <button onclick="vaiAllaPrima()" style="margin-top: 5px;margin-left: 15% ;float: left;border-color: transparent ;background-color: transparent">
+                <!--di seguito i bottoni che gestiscono avanti, indietro, vai alla prima foto e vai all'ultima foto-->
+                <button onclick="vaiAllaPrima()" class="classButtonIndietro">
                     <img id="a" width="20" height="20" src="../Img/bottoni/vaiAPrimaImg.png" alt="indietro">
                 </button>
-                <button onclick="indietro()" style="margin-top: 5px;margin-left: 15% ;float: left;border-color: transparent ;background-color: transparent">
+                <button onclick="indietro()" class="classButtonIndietro">
                     <img id="b" width="20" height="20" src="../Img/bottoni/indietro.png" alt="indietro">
                 </button>
-                <button onclick="vaiAllUltima()" style="margin-top: 5px;margin-right: 15%;float: right;border-color: transparent ;background-color: transparent" >
+                <button onclick="vaiAllUltima()" class="classButtonAvanti" >
                     <img  width="20" height="20" src="../Img/bottoni/vaiAUltimaImg.png" alt="avanti">
                 </button>
-                <button onclick="avanti()" style="margin-top: 5px;margin-right: 15%;float: right;border-color: transparent ;background-color: transparent" >
+                <button onclick="avanti()" class="classButtonAvanti" >
                     <img  width="20" height="20" src="../Img/bottoni/avanti.png" alt="avanti">
                 </button>
             </div>
         </div>
+        <!--
+            parte relativa ai social dove ho preferito un posizionamento FIX
+            e riportato il tutto in tutte le pagine del sito
+        -->
         <div class="classIconeSocial">
             <div><a href="underCostruction.html" target="_blank"><img src="../Img/facebook-logo-png-20.png" alt="facebook" width="45" height="45"></a></div>
             <div><a href="underCostruction.html" target="_blank"><img src="../Img/instagram-circle-icon-1024x1024.png" alt="instagram" width="45" height="45"></a></div>
             <div><a href="underCostruction.html" target="_blank"><img src="../Img/Twitter Icon_zps808djoyw.png" alt="twetter" width="45" height="45"></a></div>
         </div>
-        <br><br><br>
 
+        <br><br><br>
         <footer>
             <small>Creative Cake © 2017 Design by Tania Web Designer </small>
         </footer>
-
+        <!-- 
+            div relativo all'immagine cornice presente agli estremi 
+            verticali di tutte le pagine presenti nel sito 
+        -->
         <div class="classH1"></div>
     </body>
 </html>
