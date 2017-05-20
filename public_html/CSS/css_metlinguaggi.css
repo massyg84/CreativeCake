@@ -283,3 +283,31 @@ successo per la prenotazione*/
     font-size: 15px;
     background-color: #ffb3b3;
 }
+
+.classFigureGallery{
+    margin: 1%;
+    width: auto;
+    height: auto;
+    /*border: dotted;*/
+}
+
+/*
+* abbiamo messo un'altezza fissa per le classi 
+* Img e Section di Gallery altrimenti 
+* le immagini con altezza diverse variano 
+* il layout della pag
+*/
+.classImgGallery{
+    border-radius: 7px; 
+    width: 100%;
+    height: 420px;
+}
+.classSectionGallery{
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    width: 80%;
+    height: 480px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}

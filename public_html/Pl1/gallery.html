@@ -15,6 +15,68 @@ and open the template in the editor.
         <link rel="stylesheet" type="text/css" href="../Layout/Layout.css">
     </head>
     <body>
+        <script>
+            var contatore=1;
+
+            function avanti(){
+                if(contatore !== 9){
+                    contatore = contatore + 1;
+                    document.getElementById("imgGallery").src='../Img/Gallery/PageGallery/Foto'+contatore+'.jpg';
+                    
+                    //utilizzo il metodo centralizzato per modificare la didascalia
+                    modifica_didascalia(contatore);
+                }
+            }
+            
+            function indietro(){
+
+                if(contatore !== 1){
+                    contatore = contatore - 1;
+                    document.getElementById("imgGallery").src='../Img/Gallery/PageGallery/Foto'+contatore+'.jpg';
+                    
+                    //utilizzo il metodo centralizzato per modificare la didascalia
+                    modifica_didascalia(contatore);
+                }
+            }
+            
+            function vaiAllaPrima(){
+                if(contatore !== 1){
+                    contatore=1;
+                    document.getElementById("imgGallery").src='../Img/Gallery/PageGallery/Foto1.jpg';
+                    modifica_didascalia(1);
+                }
+            }
+            function vaiAllUltima(){
+                if(contatore !== 9){
+                    contatore=9;
+                    document.getElementById("imgGallery").src='../Img/Gallery/PageGallery/Foto9.jpg';
+                    modifica_didascalia(9);
+                }
+            }
+            
+            function modifica_didascalia(contatore){
+                var text1="La location";
+                var text2="Assaggia i nostri cupcake";
+                var text3="Cupcake al cioccolato fondente appena sfornati";
+                var text4="La nostra vetrina";
+                var text5="La preparazione";
+                var text6="Cupcake misti";
+                var text7="Aperitivi e degustazioni";
+                var text8="Cupcake ai mirtilli selvatici";
+                var text9="";                
+                    //modifica dinamica della didascalia
+                    if(contatore===1) document.getElementById("figCaptionText").innerHTML=text1;
+                    if(contatore===2) document.getElementById("figCaptionText").innerHTML=text2;
+                    if(contatore===3) document.getElementById("figCaptionText").innerHTML=text3;
+                    if(contatore===4) document.getElementById("figCaptionText").innerHTML=text4;
+                    if(contatore===5) document.getElementById("figCaptionText").innerHTML=text5;
+                    if(contatore===6) document.getElementById("figCaptionText").innerHTML=text6;
+                    if(contatore===7) document.getElementById("figCaptionText").innerHTML=text7;
+                    if(contatore===8) document.getElementById("figCaptionText").innerHTML=text8;
+                    if(contatore===9) document.getElementById("figCaptionText").innerHTML=text9;
+            }
+        </script>
+        
         <div class="classH1"></div>
         <header>
             <h1 class="classHPink"> Gallery </h1>
@@ -30,12 +92,37 @@ and open the template in the editor.
             </ul>
         </nav>
         <div class="classDivCenter"><img src="../Img/divisore.png" style="width: 45%" alt="divisore"/></div>
-        <section>
         
-            
         
-        </section>        
-            
+        <div class="classDivCenter">
+            <div class="classMainGallery">
+                <section class="classSectionGallery">
+                    <figure class="classFigureGallery">
+                        <img id="imgGallery" class="classImgGallery" src="../Img/Gallery/PageGallery/Foto1.jpg" alt="foto1" style="border-radius: 7px">
+                        <figcaption><span id="figCaptionText">La location</span></figcaption>
+                    </figure>   
+                </section>
+                <button onclick="vaiAllaPrima()" style="margin-top: 5px;margin-left: 15% ;float: left;border-color: transparent ;background-color: transparent">
+                    <img id="a" width="20" height="20" src="../Img/bottoni/vaiAPrimaImg.png" alt="indietro">
+                </button>
+                <button onclick="indietro()" style="margin-top: 5px;margin-left: 15% ;float: left;border-color: transparent ;background-color: transparent">
+                    <img id="b" width="20" height="20" src="../Img/bottoni/indietro.png" alt="indietro">
+                </button>
+                <button onclick="vaiAllUltima()" style="margin-top: 5px;margin-right: 15%;float: right;border-color: transparent ;background-color: transparent" >
+                    <img  width="20" height="20" src="../Img/bottoni/vaiAUltimaImg.png" alt="avanti">
+                </button>
+                <button onclick="avanti()" style="margin-top: 5px;margin-right: 15%;float: right;border-color: transparent ;background-color: transparent" >
+                    <img  width="20" height="20" src="../Img/bottoni/avanti.png" alt="avanti">
+                </button>
+            </div>
+        </div>
+        <div class="classIconeSocial">
+            <div><a href="underCostruction.html" target="_blank"><img src="../Img/facebook-logo-png-20.png" alt="facebook" width="45" height="45"></a></div>
+            <div><a href="underCostruction.html" target="_blank"><img src="../Img/instagram-circle-icon-1024x1024.png" alt="instagram" width="45" height="45"></a></div>
+            <div><a href="underCostruction.html" target="_blank"><img src="../Img/Twitter Icon_zps808djoyw.png" alt="twetter" width="45" height="45"></a></div>
+        </div>
+        <br><br><br>
+        
         <footer>
             <small>Creative Cake © 2017 Design by Tania Web Designer </small>
         </footer>

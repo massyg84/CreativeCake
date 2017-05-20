@@ -65,6 +65,13 @@ nav.mainPage {
     /*margin-right: auto;*/
     padding-left: 10%;
 }
+.classMainGallery{
+    /*border: dotted;*/ 
+    width: 60%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;  
+}
 
 section.classSectionPrenotazione {
       width: 400px;
@@ -105,4 +112,8 @@ section.classSectionPrenotazione {
  @font-face {
   font-family: 'Josefin Sans';
   src: local('Josefin Sans'), url('../Font/JosefinSans.woff2') format('woff2');
+}
+
+footer{
+    clear: left;
 }
