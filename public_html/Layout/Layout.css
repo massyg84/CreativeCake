@@ -6,22 +6,22 @@ nav.mainPage {
     font-size: 18px;
     line-height: 25px;
     margin-top: 15px;
-    }
-    
+}
+
 .classDivCenter{
-   text-align: center;
-   /*border: dotted;*/
-    }
+    text-align: center;
+    /*border: dotted;*/
+}
 .classMain{
-    
-         width: 90%;
-         display: inline-block;
-         margin-left: auto;
-         margin-right: auto;
-         /*border: dotted;*/
-         text-align: center;
-        }
-        
+
+    width: 90%;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    /*border: dotted;*/
+    text-align: center;
+}
+
 /*
 * Questa è la classe contenitore trattata come una tabella che avrà colonne al suo interno.
 * Con le proprietà display:table e display:table-cell i div 
@@ -31,21 +31,21 @@ nav.mainPage {
 * vertical-align:midddle il testo al suo interno si centrerà verticalmente. 
 */
 .classMainDaily{
-        width: 60%;
-        display: table;
-        margin-left: auto;
-        margin-right: auto;
-        /*border: dotted;*/
-        
-        }
+    width: 60%;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    /*border: dotted;*/
+
+}
 .classMainEventi{
-    
-         width: 50%;
-         /*display: inline-block;*/
-         margin-left: auto;
-         margin-right: auto;
-         /*border: dotted;*/
-        }
+
+    width: 50%;
+    /*display: inline-block;*/
+    margin-left: auto;
+    margin-right: auto;
+    /*border: dotted;*/
+}
 
 .classDivHome{
     font-size: 17px;
@@ -53,7 +53,7 @@ nav.mainPage {
     display: inline-block;
     margin-left: 8%;
     text-align: justify;
-    /*border: dotted;*/
+/*    border: dotted;*/
 }
 
 .classMainContatti{
@@ -74,25 +74,25 @@ nav.mainPage {
 }
 
 section.classSectionPrenotazione {
-      width: 400px;
-      height: 230px;
-      margin: 0 auto;
-      margin-top: 10px;
-      padding: 15px;
-      padding-top: 5px;
-    }
+    width: 400px;
+    height: 230px;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 15px;
+    padding-top: 5px;
+}
 
 .lastSection {
-      border-bottom: 1px solid #ccc;
-    }
+    border-bottom: 1px solid #ccc;
+}
 .longLine {
-      height: 70px;
-    }
-    .noBottomBorder {
-      border: 0;
-    }
+    height: 70px;
+}
+.noBottomBorder {
+    border: 0;
+}
 
-    
+
 .classIconeSocial{
     position: fixed;
     right: 50px;
@@ -109,9 +109,9 @@ section.classSectionPrenotazione {
     font su tutti i browser anche quando esso non è installato 
     all’interno del PC dell’utente.   
 */
- @font-face {
-  font-family: 'Josefin Sans';
-  src: local('Josefin Sans'), url('../Font/JosefinSans.woff2') format('woff2');
+@font-face {
+    font-family: 'Josefin Sans';
+    src: local('Josefin Sans'), url('../Font/JosefinSans.woff2') format('woff2');
 }
 
 footer{

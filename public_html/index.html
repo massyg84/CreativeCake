@@ -39,6 +39,15 @@ and open the template in the editor.
 
         <div class="classDivCenter"><img src="Img/divisore.png" style="width: 45%" alt="divisore"/></div>
 
+        <!--
+               nel seguente div che è impostato a CSS display:inline-block ci 
+               sarà un contenitore classDivHome che presenta un immagine e un 
+               paragrafo. l'immagine è posta spostata a sinistra
+               float:left e il paragrafo si adatta. Ho inserito il margin Top a 50px 
+               fisso perchè ha un effetto migliore aumentando e diminuendo la 
+               risoluzione dello schermo restando della stessa forma(mentre 
+               con le percentuali varia molto il layout
+        -->
         <div class="classMain">
             <div class="classDivHome">
                 <img class="classImgCupcake" src="Img/cupcake.jpg"  alt="cupcake"/>
@@ -50,13 +59,21 @@ and open the template in the editor.
                     mille gusti, milkshake e sorprese culinarie a tema.
                     Se amate il dolce questo è il posto perfetto.</p>
             </div>   
-        </div>    
+        </div>
+        <!--
+            parte relativa ai social dove ho preferito un posizionamento FIX
+            e riportato il tutto in tutte le pagine del sito
+        -->
         <div class="classIconeSocial">
             <div><a href="Pl1/underCostruction.html" target="_blank"><img src="Img/facebook-logo-png-20.png" alt="facebook" width="45" height="45"></a></div>
             <div><a href="Pl1/underCostruction.html" target="_blank"><img src="Img/instagram-circle-icon-1024x1024.png" alt="instagram" width="45" height="45"></a></div>
             <div><a href="Pl1/underCostruction.html" target="_blank"><img src="Img/Twitter Icon_zps808djoyw.png" alt="twetter" width="45" height="45"></a></div>
         </div>
         <br><br><br>
+        <!--
+            Nel CSS il footer verrà impostato con clear:left per evitare che salga 
+            con i vari elementi seguendo "il float"
+        -->
         <footer>
             <small>Creative Cake © 2017 Design by Tania Web Designer </small>
         </footer>

@@ -5,19 +5,19 @@ per l'elemento img     */
 img.classImg   {
     width: 18px;
     height: 18px;
-        } 
-  
+} 
+
 img.classHome   {
     width: 20px;
     height: 20px;
-        }         
+}         
 img.classImgCupcake{
-    float: left;
+    float: left ;
     width: 45%;
-        }        
+}        
 body{   
-     font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;   
-        }
+    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;   
+}
 
 /*
  *   customizziamo i link a colore nero, non sottolineati e non grassetto
@@ -31,19 +31,19 @@ a{
  *   impostiamo li in modo da avere una navigation bar in linea
  */       
 li.classOrizontalNav{
-   display: inline; 
-   
-   }
-   
+    display: inline; 
+
+}
+
 /*
  *   Questa classe inserisce gli spazi nella navigation bar
  */
 .classSpan {
     margin-left: 17px;
     margin-right: 17px;
-        }
+}
 
-     
+
 /*
  *   classe relativa alle immagini prima di header e dopo il footer
  */
@@ -52,47 +52,47 @@ li.classOrizontalNav{
     background-repeat: repeat-x;
     width: 100%;
     height: 115px;
-        }
-
- /*
- *   TODO bisogna mettere la classe e non generalizzare gli h1
- */
-    h1{
-       text-align: center;
-       margin: 50px;
 }
-    
-     fieldset {
-      clear: left;
-      border: 0px;
-      border-bottom: 1px dotted #dcdcdc;
-      padding: 10px;
-      height: 30px;
-    }
-    label {
-      font-weight: bold;
-      width: 100px;
-      float: left;
-    }
-    input, textarea {
-      border: 1px solid #dcdcdc;
-      padding: 4px;
-      width: 240px;
-      color: #444;
-      float: left;
-    }
- 
+
+/*
+*   TODO bisogna mettere la classe e non generalizzare gli h1
+*/
+h1{
+    text-align: center;
+    margin: 50px;
+}
+
+fieldset {
+    clear: left;
+    border: 0px;
+    border-bottom: 1px dotted #dcdcdc;
+    padding: 10px;
+    height: 30px;
+}
+label {
+    font-weight: bold;
+    width: 100px;
+    float: left;
+}
+input, textarea {
+    border: 1px solid #dcdcdc;
+    padding: 4px;
+    width: 240px;
+    color: #444;
+    float: left;
+}
+
 .classHPink{
     color: #ffb3b3;
 }
-   
+
 .classGallery{
     margin: 25px;
     border: 1px solid #ccc;
     display: inline-block;
     width: 300px;
-    
-   
+
+
 }
 .classH3Prod{
     margin-top: auto;
@@ -100,7 +100,7 @@ li.classOrizontalNav{
     color: #ffb3b3;
     /*allineo titoletto a sinistra*/ 
     text-align: left;
- }
+}
 .classImgProd{
     width: 100%;
 }
@@ -178,8 +178,8 @@ li.classOrizontalNav{
     padding: 1px;
 }
 .classDivFormContatti{
-   clear: left;
-   height: 25px;
+    clear: left;
+    height: 25px;
 }
 .classLabelContatti{
     font-weight: bold;
@@ -197,24 +197,24 @@ li.classOrizontalNav{
     height: 400px;
 }
 .classInputContatti{
-     /*border: 1px solid #dcdcdc;*/
-      padding: 4px;
-      width: 400px;
-      height: 25px;
-      color: #444;
-      float: left;
-      margin-left: 10%;
-      font-size: 18px;
+    /*border: 1px solid #dcdcdc;*/
+    padding: 4px;
+    width: 400px;
+    height: 25px;
+    color: #444;
+    float: left;
+    margin-left: 10%;
+    font-size: 18px;
 }
 .classTAreaContatti{
-     /*border: 1px solid #dcdcdc;*/
-      padding: 4px;
-      width: 400px;
-      height: 150px;
-      color: #444;
-      float: left;
-      margin-left: 10%;
-      font-size: 18px;
+    /*border: 1px solid #dcdcdc;*/
+    padding: 4px;
+    width: 400px;
+    height: 150px;
+    color: #444;
+    float: left;
+    margin-left: 10%;
+    font-size: 18px;
 }
 
 .classButtonSendEmail{
@@ -244,7 +244,7 @@ successo per la prenotazione*/
     margin-top: 10px;
     margin-bottom: 10px;
     display: none;
-    }
+}
 
 .completed {
     background: #B3FFB0;
