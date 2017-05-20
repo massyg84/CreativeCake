@@ -18,11 +18,11 @@ and open the template in the editor.
     </head>
     <body>
         <div class="classH1"></div>
-        
+
         <header> 
             <h1 class="classHPink">Prenotazione</h1>
         </header>
-        
+
         <nav class="mainPage">
             <ul>
                 <li class="classOrizontalNav"><a  href="../index.html">Home</a> <span class="classSpan"></span></li>
@@ -33,26 +33,26 @@ and open the template in the editor.
                 <li class="classOrizontalNav"><a  href="contatti.html">Contatti</a> <span class="classSpan"></span></li>
             </ul>
         </nav>  
-       
-        
+
+
         <div class="classDivCenter"><img src="../Img/divisore.png" style="width: 45%" alt="divisore"/></div>
-        
+
         <div class="classDivCenter">
-            
+
             <form id="form_prenotazione" name="form_prenotazione"  onsubmit="return valida_e_prenota_form()" onreset=""> 
-             
+
                 <div id="error" class="error"  >
                     <img src="../Img/error.png" class="notificheLogo" alt="errorImg"/><span id="messError"></span>
                 </div>
-       
+
                 <div id="completed" class="completed" >
                     <img src="../Img/ok.gif" class="notificheLogo" alt="okImg"/> 
                     Prenotazione effettuata con successo
                 </div>   
-               
+
                 <section class="classSectionPrenotazione">
-          
-        
+
+
                     <fieldset>
                         <label>Evento</label>
                         <select class="select_join" id="evento_da_prenotare" name="evento_da_prenotare">
@@ -68,19 +68,19 @@ and open the template in the editor.
                             <option value="Evento9">Cupfriday 26 Maggio</option>
                         </select>
                     </fieldset>
-            
+
                     <fieldset>
                         <label>Nome</label><input name="nome" id="nome" type="tel" >
                     </fieldset>
-        
+
                     <fieldset>
                         <label>Cognome</label><input name="cognome" id="cognome" type="text" >
                     </fieldset>
-	
+
                     <fieldset>
                         <label>N° Cellulare</label><input name="telefono" id="telefono" type="text" >
                     </fieldset>
-	
+
                     <fieldset>
                         <label>N° Persone</label><input name="persone" id="persone" type="number" placeholder="1">
                     </fieldset>
@@ -91,21 +91,21 @@ and open the template in the editor.
                         <label>Richieste</label><textarea rows="4" cols="100" name="commenti" id="commenti" placeholder="cercheremo di esaudire le tue richieste" maxlength="100" wrap="soft"></textarea>
                     </fieldset>
                     <fieldset class="noBottomBorder">
-                    <button class="classButton" type="submit" >Prenota evento</button>
-                    <button class="classButtonRipristina" type="button" onclick="reset_form()" >Ripristina</button>
+                        <button class="classButton" type="submit" >Prenota evento</button>
+                        <button class="classButtonRipristina" type="button" onclick="reset_form()" >Ripristina</button>
                     </fieldset>
                 </section>
             </form>
         </div>
         <div class="classIconeSocial">
-           <div><a href="underCostruction.html" target="_blank"><img src="../Img/facebook-logo-png-20.png" alt="facebook" width="45" height="45"></a></div>
+            <div><a href="underCostruction.html" target="_blank"><img src="../Img/facebook-logo-png-20.png" alt="facebook" width="45" height="45"></a></div>
             <div><a href="underCostruction.html" target="_blank"><img src="../Img/instagram-circle-icon-1024x1024.png" alt="instagram" width="45" height="45"></a></div>
             <div><a href="underCostruction.html" target="_blank"><img src="../Img/Twitter Icon_zps808djoyw.png" alt="twetter" width="45" height="45"></a></div>
         </div>
         <br><br>
-        
+
         <footer>
-                <small>Creative Cake © 2017 Design by Tania Web Designer </small>
+            <small>Creative Cake © 2017 Design by Tania Web Designer </small>
         </footer>
         <div class="classH1"></div>
     </body>
