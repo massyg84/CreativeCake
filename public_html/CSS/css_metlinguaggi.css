@@ -120,29 +120,36 @@ li.classOrizontalNav{
     font-size: large;
     text-align: justify;
 }
+
+/*
+* con le proprietà display:table e display:table-cell i div 
+* hanno un comportamento molto simile a quello di una tabella e le celle contenute; 
+* infatti il div con la proprietà display:table-cell viene a espandersi come fa una 
+* cella dentro la tabella ed assegnandoli anche la proprietà 
+* vertical-align:midddle il testo al suo interno si centrerà verticalmente. 
+*/
 .classDaily{
     margin: 25px;
-    width: 25%;
-    height: 240px;
-    float: left;
-    padding: 1px;
+    width: 10%;
+    height: 200px;
+    display: table-cell;
     /*border: dotted;*/
+    vertical-align: central;
 }
 .classPDaily{
     text-align: justify;
     margin: 5%;
-    height: 90px;
     font-size: 18px;
-    
+    /*border: dotted;*/
 }
 .classH2Daily{
-    margin-top: auto;
     margin-left: 5%;
     color: #ffb3b3;
     /*allineo titoletto a sinistra*/ 
     text-align: left;
 }
 .classImgDaily{
+    margin: 1%;
     width: auto;
     height: auto;
     /*border: dotted;*/
