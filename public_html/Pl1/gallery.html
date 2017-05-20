@@ -13,68 +13,14 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="../CSS/css_metlinguaggi.css">
         <link rel="stylesheet" type="text/css" href="../Layout/Layout.css">
+        <script type="text/javascript" src="../JS/creativeCakeJavascript.js"></script>
     </head>
     <body>
         <script>
+        /* variabile messa in sessione utile per la visualizzazione e lo scorrimento
+         *   delle foto nella gallery
+         */
             var contatore=1;
-
-            function avanti(){
-                if(contatore !== 9){
-                    contatore = contatore + 1;
-                    document.getElementById("imgGallery").src='../Img/Gallery/PageGallery/Foto'+contatore+'.jpg';
-                    
-                    //utilizzo il metodo centralizzato per modificare la didascalia
-                    modifica_didascalia(contatore);
-                }
-            }
-            
-            function indietro(){
-
-                if(contatore !== 1){
-                    contatore = contatore - 1;
-                    document.getElementById("imgGallery").src='../Img/Gallery/PageGallery/Foto'+contatore+'.jpg';
-                    
-                    //utilizzo il metodo centralizzato per modificare la didascalia
-                    modifica_didascalia(contatore);
-                }
-            }
-            
-            function vaiAllaPrima(){
-                if(contatore !== 1){
-                    contatore=1;
-                    document.getElementById("imgGallery").src='../Img/Gallery/PageGallery/Foto1.jpg';
-                    modifica_didascalia(1);
-                }
-            }
-            function vaiAllUltima(){
-                if(contatore !== 9){
-                    contatore=9;
-                    document.getElementById("imgGallery").src='../Img/Gallery/PageGallery/Foto9.jpg';
-                    modifica_didascalia(9);
-                }
-            }
-            
-            function modifica_didascalia(contatore){
-                var text1="La location";
-                var text2="Assaggia i nostri cupcake";
-                var text3="Cupcake al cioccolato fondente appena sfornati";
-                var text4="La nostra vetrina";
-                var text5="La preparazione";
-                var text6="Cupcake misti";
-                var text7="Aperitivi e degustazioni";
-                var text8="Cupcake ai mirtilli selvatici";
-                var text9="";                
-                    //modifica dinamica della didascalia
-                    if(contatore===1) document.getElementById("figCaptionText").innerHTML=text1;
-                    if(contatore===2) document.getElementById("figCaptionText").innerHTML=text2;
-                    if(contatore===3) document.getElementById("figCaptionText").innerHTML=text3;
-                    if(contatore===4) document.getElementById("figCaptionText").innerHTML=text4;
-                    if(contatore===5) document.getElementById("figCaptionText").innerHTML=text5;
-                    if(contatore===6) document.getElementById("figCaptionText").innerHTML=text6;
-                    if(contatore===7) document.getElementById("figCaptionText").innerHTML=text7;
-                    if(contatore===8) document.getElementById("figCaptionText").innerHTML=text8;
-                    if(contatore===9) document.getElementById("figCaptionText").innerHTML=text9;
-            }
         </script>
         
         <div class="classH1"></div>

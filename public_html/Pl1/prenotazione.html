@@ -14,66 +14,9 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="../CSS/css_metlinguaggi.css">
         <link rel="stylesheet" type="text/css" href="../Layout/Layout.css">
+        <script type="text/javascript" src="../JS/creativeCakeJavascript.js"></script>  
     </head>
-   
- 
     <body>
-        <script>
-            function valida_e_prenota_form() {
-                if(document.getElementById("completed").style.display === "block"){
-                document.getElementById("completed").style.display = 'none';
-                return true;
-                }
-                else{
-                var evento = document.forms["form_prenotazione"]["evento_da_prenotare"].value ;
-                var nome = document.forms["form_prenotazione"]["nome"].value ;
-                var cognome = document.forms["form_prenotazione"]["cognome"].value ;
-                var telefono = document.forms["form_prenotazione"]["telefono"].value ;
-                var prenotazione = false;
-                document.getElementById("completed").style.display = 'none';
-                if (evento === "") { 
-                document.getElementById("error").style.display = 'block';
-                document.getElementById("messError").innerHTML ='Seleziona l\'Evento a cui vuoi partecipare';
-                return prenotazione;
-                }
-                else if (nome === "") { 
-                document.getElementById("error").style.display = 'block';
-                document.getElementById("messError").innerHTML ='Nome è un campo obbligatorio';
-                return prenotazione;
-                }
-                else if (cognome === "") { 
-                document.getElementById("error").style.display = 'block';
-                document.getElementById("messError").innerHTML ='Cognome è un campo obbligatorio';
-                return prenotazione;
-                }
-                else if (telefono === "") { 
-                document.getElementById("error").style.display = 'block';
-                document.getElementById("messError").innerHTML ='Telefono è un campo obbligatorio';
-                return prenotazione;
-                }
-        // isNaN è una funzione che ritorna true se il parametro NON E' un numero altrimenti ritorna false
-        // inoltre faccio un controllo che il numero inserito non sia < 0 (parseInt ritorna il valore numerico del parametro
-                if (isNaN(telefono) || parseInt(telefono)<0){
-                document.getElementById("error").style.display = 'block';
-                document.getElementById("messError").innerHTML ='Telefono è un campo numerico';
-                return prenotazione;
-                }
-                prenotazione = true;
-                document.getElementById("error").style.display = 'none';
-                document.getElementById("completed").style.display = 'block';
-        
-                console.log(typeof(telefono));
-        //da chiedere al professore
-                return false;
-                }
-            }
-            function reset_form(){
-                document.getElementById("completed").style.display = 'none';
-                document.getElementById("error").style.display = 'none';
-         
-                 document.getElementById("form_prenotazione").reset();
-            }
-        </script>   
         <div class="classH1"></div>
         
         <header> 
