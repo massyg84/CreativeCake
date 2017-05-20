@@ -60,6 +60,7 @@ nav.mainPage {
     /*border: dotted;*/ 
     width: auto;
     display: inline-block;
+    text-align: justify;
     /*margin-left: auto;*/
     /*margin-right: auto;*/
     padding-left: 10%;
