@@ -17,6 +17,9 @@
     height: 115px;
 }
 
+body{   
+    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;   
+}
 
 /*
  * impostazione di layout usata per tutte le navigation bar nelle varie pagine
@@ -31,7 +34,7 @@ nav.mainPage {
     margin-top: 15px;
 }
 /*
- *   impostiamo li in modo da avere una navigation bar in linea
+ *   imposto "li" in modo da avere una navigation bar in linea
  */       
 li.classOrizontalNav{
     display: inline; 
@@ -59,13 +62,13 @@ li.classOrizontalNav{
 /*****************INIZIO CALSS MAIN*************************/
 
 /*
- * Classe contenitore usato per la home e la nostra produzione
+ * Classe contenitore usato per la "home" e "la nostra produzione"
  * le classi contenitore delle pagine sono quasi tutte diverse per 
  * ogni pagina in quanto ogni pagina ha un layout ben definito e diverso
  * dalle altre
  */
 .classMain{
-
+    
     width: 90%;
     display: inline-block;
     margin-left: auto;
@@ -102,7 +105,7 @@ li.classOrizontalNav{
 
 .classMainContatti{
     /*border: dotted;*/ 
-    width: 80%;
+    width: auto;
     display: inline-block;
     text-align: justify;
     /*margin-left: auto;*/

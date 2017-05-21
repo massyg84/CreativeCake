@@ -1,7 +1,8 @@
 /*
 in questo modo si può definire 
 una classe con uno stesso stile 
-per l'elemento img     */
+per l'elemento img     
+*/
 img.classImg   {
     width: 18px;
     height: 18px;
@@ -15,12 +16,10 @@ img.classImgCupcake{
     float: left ;
     width: 45%;
 }        
-body{   
-    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;   
-}
 
 /*
- *  In generale customizziamo i link a colore nero, non sottolineati e non grassetto
+ *  In generale customizzo i link a colore nero, non sottolineati e non grassetto
+ *  introdotto per la navigation bar.
  */
 a{
     color: black;
@@ -36,18 +35,33 @@ h1{
     margin: 50px;
 }
 
+/*
+ *   classe per i titoli colorati
+ */
 .classHPink{
     color: #ffb3b3;
 }
 
+/*
+ * classe per la "nostra produzione" utile per avere i container delle immagini
+ * e le descrizioni in linea senza usare il float:left che decentra il contenuto 
+ * rispetto alla pagina.
+ * E' importante il vertical-align: top in quanto altrimenti i div non rimangono 
+ * allineati l'uno con l'altro. Su stack overflow è descritta la soluzione che ho 
+ * attuato (allineare al top o al middle il container)
+ */
 .classGallery{
     margin: 25px;
     border: 1px solid #ccc;
     display: inline-block;
     width: 300px;
-
-
+    vertical-align: top;
 }
+
+
+/*
+ * #ffb3b3 è il rosa che è stato ricavato da photoshop 
+ */
 .classH3Prod{
     margin-top: auto;
     margin-left: 5%;
@@ -55,6 +69,9 @@ h1{
     /*allineo titoletto a sinistra*/ 
     text-align: left;
 }
+
+/*************** LA MIA PRODUZIONE *************/
+
 .classImgProd{
     width: 100%;
 }
@@ -63,6 +80,10 @@ h1{
     margin: 5%;
     height: 90px;
 }
+
+/*********FINE LA MIA PRODUZIONE********************/
+
+/**************EVENTI DEL MESE **********************/
 .classImgEvent{
     border-radius: 7px; 
     width: 100%;
@@ -74,6 +95,10 @@ h1{
     font-size: large;
     text-align: justify;
 }
+
+/*******************Fine EVENTI DEL MESE***********************/
+
+/*****************************DAILY CUPCAKE***********************/
 
 /*
 * con le proprietà display:table e display:table-cell i div 
@@ -109,17 +134,37 @@ h1{
     /*border: dotted;*/
 }
 
+/***************FINE DAILY CUPCAKE***********************/
+
+
+/********************** CONTATTI *****************************/
 .classDivContatti{
     /*border: dotted;*/
     margin-top: 25px;
-    margin-left: 15%;
-    /*border: 1px solid #ccc;*/
-    float: left;
-    width: 300px;
+    margin-left: 8%;
+    display: inline-block;
+    width: 20%;
     padding: 1px;
     text-align: justify;
+    vertical-align: top;
 }
+.classDivEmail{
+    margin-top: 25px;
+    margin-left: 5%;
+    /*border: 1px solid #ccc;*/
+    display: inline-block;
+    width: 750px;
+    text-align: justify;
+    padding: 1px;
+}
+
+/*
+ * è importante questo container in quanto mediante il clear left non si ha la 
+ * situazione che l'elemento in float attiri il div successivo (provando con il 
+ * border dotted si può notare come senza il clear il div salga fino a "Messaggi")
+ */
 .classDivFormContatti{
+    /*border: dotted;*/
     clear: left;
     height: 25px;
 }
@@ -129,15 +174,7 @@ h1{
     float: left;
     font-size: 20px;
 }
-.classDivEmail{
-    margin-top: 25px;
-    /*border: 1px solid #ccc;*/
-    display: inline-block;
-    width: 750px;
-    text-align: justify;
-    padding: 1px;
-    height: 400px;
-}
+
 .classInputContatti{
     /*border: 1px solid #dcdcdc;*/
     padding: 4px;
@@ -164,14 +201,15 @@ h1{
     width: 640px;
     height: 35px;
     background-color: #ffb3b3;
-    margin-top: 10px;
+    margin-top: 15px;
     font-size: 20px;
 }
+/**********************FINE CONTATTI *****************************/
 
+/************************PRENOTAZIONE*********************/
 
 /*css relativo ai messaggi di errore e 
 successo per la prenotazione*/
-
 .error {
     background: #FDE2E2;
     width: 400px;
@@ -204,6 +242,9 @@ successo per la prenotazione*/
     display: none;
 }
 
+/*
+ * immagine x e v per la gestione di successo/insuccesso
+ */
 .notificheLogo {
     vertical-align: middle;
     margin-right: 10px;
@@ -225,7 +266,9 @@ successo per la prenotazione*/
     font-size: 15px;
     background-color: #ffb3b3;
 }
+/**************FINE PRENOTAZIONE*******************/
 
+/******************GALLERY*********************/
 .classFigureGallery{
     margin: 1%;
     width: auto;
@@ -239,18 +282,18 @@ successo per la prenotazione*/
     margin-right: 15%;
     float: right;
     border-color: transparent ;
-    background-color: transparent
+    background-color: transparent;
 }
 .classButtonIndietro{
     margin-top: 5px;
     margin-left: 15% ;
     float: left;
     border-color: transparent ;
-    background-color: transparent
+    background-color: transparent;
 }
 
 /*
-* abbiamo messo un'altezza fissa per le classi 
+* Ho messo un'altezza fissa per le classi 
 * Img e Section di Gallery altrimenti 
 * le immagini con altezza diverse variano 
 * il layout della pag

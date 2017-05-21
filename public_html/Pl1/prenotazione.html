@@ -1,10 +1,4 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-
 <html lang="en">
     <head>
         <title>Prenotazione - Creative Cake</title>
@@ -52,14 +46,14 @@ and open the template in the editor.
                 con un messaggio di successo che appare sopra il form in colore verde (stessa posizione del messaggio di insuccesso)
             
             NOTA: la gestione di successo e insuccesso produce un valore di ritorno nel javascript che però è sempre impostato
-            a false in quanto essendo un mock il ritorno con un valore true mi ricaricherebbe la pagina e mi causerebbe la perdita
+            a false in quanto essendo un "mock" il ritorno con un valore true mi ricaricherebbe la pagina e mi causerebbe la perdita
             di tutti i dati(compreso il messaggio di successo). Mentre con il false resta bloccato e l'utente per effettuare una nuova
             operazione dovrà effettuare il reset.
         
             A sua volta anche il reset è una funzione javascript in quanto oltre che al metodo reset classico avevo bisogno di risettare
             a none la visibilità dei messaggi di successo e insuccesso.
         -->
-            <form id="form_prenotazione" name="form_prenotazione"  onsubmit="return valida_e_prenota_form()"> 
+        <form id="form_prenotazione" action="prenotazione.html" name="form_prenotazione"  onsubmit="return valida_e_prenota_form()"> 
 
                 <!-- 
                     di seguito i messaggi d'errore gestito (per la presentazione stilistica) dalla classe nel CSS error
@@ -135,7 +129,7 @@ and open the template in the editor.
                         <label>Richieste</label><textarea rows="4" cols="100" name="commenti" id="commenti" placeholder="cercheremo di esaudire le tue richieste" maxlength="100" wrap="soft"></textarea>
                     </fieldset>
                     <fieldset class="noBottomBorder">
-                        <button class="classButton" type="submit" >Prenota evento</button>
+                        <button class="classButton" id="bottoneSubmit" type="submit" >Prenota evento</button>
                         <button class="classButtonRipristina" type="button" onclick="reset_form()" >Ripristina</button>
                     </fieldset>
                 </section>
