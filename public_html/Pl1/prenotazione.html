@@ -17,6 +17,10 @@ and open the template in the editor.
         <script type="text/javascript" src="../JS/creativeCakeJavascript.js"></script>  
     </head>
     <body>
+        <!-- 
+            div relativo all'immagine cornice presente agli estremi 
+            verticali di tutte le pagine presenti nel sito 
+        -->
         <div class="classH1"></div>
 
         <header> 
@@ -34,25 +38,65 @@ and open the template in the editor.
             </ul>
         </nav>  
 
-
         <div class="classDivCenter"><img src="../Img/divisore.png" style="width: 45%" alt="divisore"/></div>
 
         <div class="classDivCenter">
 
-            <form id="form_prenotazione" name="form_prenotazione"  onsubmit="return valida_e_prenota_form()" onreset=""> 
+        <!--
+            ho impostato un form che al submit svolge una funzione javasctipt per la validazione dei campi dello stesso
+            form. 
+            -   Avremo quindi la gestione dell'insuccesso e quindi uno dei campi assenti o l'evento non selezionato
+                o ancora il numero di telefono messo a lettere: tale gestione è fatta mediante la presentazione di un 
+                opportuno messaggio di errore che appare in caso di insuccesso proprio sopra il form, indicando cosa sia successo
+            -   Avremo poi la gestione del successo e quindi in caso la validazione vada a buon fine si è simulato tale evento 
+                con un messaggio di successo che appare sopra il form in colore verde (stessa posizione del messaggio di insuccesso)
+            
+            NOTA: la gestione di successo e insuccesso produce un valore di ritorno nel javascript che però è sempre impostato
+            a false in quanto essendo un mock il ritorno con un valore true mi ricaricherebbe la pagina e mi causerebbe la perdita
+            di tutti i dati(compreso il messaggio di successo). Mentre con il false resta bloccato e l'utente per effettuare una nuova
+            operazione dovrà effettuare il reset.
+        
+            A sua volta anche il reset è una funzione javascript in quanto oltre che al metodo reset classico avevo bisogno di risettare
+            a none la visibilità dei messaggi di successo e insuccesso.
+        -->
+            <form id="form_prenotazione" name="form_prenotazione"  onsubmit="return valida_e_prenota_form()"> 
 
+                <!-- 
+                    di seguito i messaggi d'errore gestito (per la presentazione stilistica) dalla classe nel CSS error
+                -->
                 <div id="error" class="error"  >
                     <img src="../Img/error.png" class="notificheLogo" alt="errorImg"/><span id="messError"></span>
                 </div>
-
+                <!-- 
+                    di seguito i messaggi di successo gestito (per la presentazione stilistica) dalla classe nel CSS completed
+                -->
                 <div id="completed" class="completed" >
                     <img src="../Img/ok.gif" class="notificheLogo" alt="okImg"/> 
                     Prenotazione effettuata con successo
                 </div>   
-
+                
+                <!--
+                    la struttura stilistica è stata settata in modo opportuno
+                    con dei fieldset customizzati per rendere l'esperienza dell'utente 
+                    più gradevole. 
+                    
+                    NOTA: nei campi ho aggiunto il placeholder per impostare un valore di 
+                    default. In generale il placeholder imposta un valore di default
+                    dipendentemente da dove si usa. In questo caso il tipo di dato era numerico
+                    quindi imposterà il valore a 1(cambiabile con le freccette), mentre nel caso 
+                    di text viene impostato un testo al suo interno che cambierà alla digitazione
+                    del primo carattere (e non si divrà necessariamente cancellare tutto il 
+                    contenuto di default)
+                
+                    NOTA2: ho scelto di non usare la validazione tramite attributo "required"
+                    in quanto la validazione prevedeva anche la selezione dell'evento (gestito con
+                    il menu a tendina). E la scelta architetturale di gestire gli eventi di successo
+                    e insuccesso tramite i messaggi che appaiono sul form (sempre per un esperienza 
+                    migliore dell'utente - User Experience)
+                -->
                 <section class="classSectionPrenotazione">
 
-
+                    
                     <fieldset>
                         <label>Evento</label>
                         <select class="select_join" id="evento_da_prenotare" name="evento_da_prenotare">
@@ -97,6 +141,10 @@ and open the template in the editor.
                 </section>
             </form>
         </div>
+        <!--
+            parte relativa ai social dove ho preferito un posizionamento FIX
+            e riportato il tutto in tutte le pagine del sito
+        -->
         <div class="classIconeSocial">
             <div><a href="underCostruction.html" target="_blank"><img src="../Img/facebook-logo-png-20.png" alt="facebook" width="45" height="45"></a></div>
             <div><a href="underCostruction.html" target="_blank"><img src="../Img/instagram-circle-icon-1024x1024.png" alt="instagram" width="45" height="45"></a></div>
@@ -107,6 +155,10 @@ and open the template in the editor.
         <footer>
             <small>Creative Cake © 2017 Design by Tania Web Designer </small>
         </footer>
+        <!-- 
+            div relativo all'immagine cornice presente agli estremi 
+            verticali di tutte le pagine presenti nel sito 
+        -->
         <div class="classH1"></div>
     </body>
 </html>
