@@ -1,17 +1,69 @@
+/*
+ *  Si è deciso di disaccoppiare il file CSS relativo agli stili dei vari componenti
+ *  e questo relativo agli elementi di LAYOUT in quanto, come studiato, sono due
+ *  gestioni separate mediante file dello stesso tipo (.css)
+ */
+
+
+/*
+ *   classe relativa alle immagini prima di header e dopo il footer
+ *   a prima vista sembra un classe di stile ma in realtà è parte
+ *   integrante dell'architettura di layout dell pagina
+ */
+.classH1{
+    background-image: url(../Img/immagine_sfondo.jpg);
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 115px;
+}
+
+
+/*
+ * impostazione di layout usata per tutte le navigation bar nelle varie pagine
+ * Da notare che ho usato un font-family non standard in quanto l'ho salvato nella
+ * cartella font e importato qui sotto nel CSS mediante la proprietà @font-face.
+ */
 nav.mainPage {
     text-align: center;
-    alignment-adjust:  middle;
     padding: 10px;
     font-family: 'Josefin Sans', Helvetica, Arial, sans-serif;
     font-size: 18px;
-    line-height: 25px;
     margin-top: 15px;
 }
+/*
+ *   impostiamo li in modo da avere una navigation bar in linea
+ */       
+li.classOrizontalNav{
+    display: inline; 
 
+}
+
+/*
+ *   Questa classe inserisce gli spazi nella navigation bar
+ */
+.classSpan {
+    margin-left: 17px;
+    margin-right: 17px;
+}
+
+/*
+ * Classe importante e riutilizzata ovunque. si tratta di un contenitore che
+ * mi centra gli elementi al suo interno (consigliato dal prof per sostituire 
+ * il center)
+ */
 .classDivCenter{
     text-align: center;
     /*border: dotted;*/
 }
+
+/*****************INIZIO CALSS MAIN*************************/
+
+/*
+ * Classe contenitore usato per la home e la nostra produzione
+ * le classi contenitore delle pagine sono quasi tutte diverse per 
+ * ogni pagina in quanto ogni pagina ha un layout ben definito e diverso
+ * dalle altre
+ */
 .classMain{
 
     width: 90%;
@@ -36,24 +88,16 @@ nav.mainPage {
     margin-left: auto;
     margin-right: auto;
     /*border: dotted;*/
-
 }
-.classMainEventi{
 
+/*
+ * Classe contenitore usato per il tab eventi 
+ */
+.classMainEventi{
     width: 50%;
-    /*display: inline-block;*/
     margin-left: auto;
     margin-right: auto;
     /*border: dotted;*/
-}
-
-.classDivHome{
-    font-size: 17px;
-    width: 680px;
-    display: inline-block;
-    margin-left: 8%;
-    text-align: justify;
-    /*    border: dotted;*/
 }
 
 .classMainContatti{
@@ -71,7 +115,35 @@ nav.mainPage {
     margin-left: auto;
     margin-right: auto;  
 }
+/***************************FINE CLASS MAIN**************************/
 
+
+/*
+ * Classe contenitore che contiene l'immagine e il paragrafo nella home
+ * l'ho fatta a larghezza fissa per mantenere la stessa forma al variare della 
+ * risoluzione dello schermo
+ */
+.classDivHome{
+    font-size: 17px;
+    width: 680px;
+    display: inline-block;
+    margin-left: 8%;
+    text-align: justify;
+    /*    border: dotted;*/
+}
+
+/************************ PAGINA DI PRENOTAZIONE***********************/
+
+/*
+ * Ho immesso nel Layout tutta la gestione grafica della pagina di presentazione.
+ * Ho fatto questa scelta perchè è stata una gestione della presentazione del form
+ * di prenotazione e quindi ho ritenuto utile vederlo come layout invece che come 
+ * css relativo agli stili
+ */
+
+/*
+ * la sezione ha una classe ben precisa con larghezza e altezza fisse
+ */
 section.classSectionPrenotazione {
     width: 400px;
     height: 230px;
@@ -81,22 +153,92 @@ section.classSectionPrenotazione {
     padding-top: 5px;
 }
 
+/* 
+ * si tratta di un impostazione aggiuntiva alla sezione della prenotazione 
+ * per aggiungere un riga finale alla presentazione del form
+ */
 .lastSection {
     border-bottom: 1px solid #ccc;
 }
+
+/*
+ * si tratta di un'impostazione grafica per mantenere una distanza (altezza) 
+ * necessaria tra l'ultimo fieldset (con i bottoni di submit e reset) e la sezione
+ * delle info extra 
+ */
 .longLine {
     height: 70px;
 }
+
+/*
+ * si tratta di un impostazione aggiuntiva all'impostazione grafica del fieldset
+ * che toglie il bordo finale sotto i bottoni di prenotazione e ripristina
+ */
 .noBottomBorder {
     border: 0;
 }
+/*
+ * si tratta di un'impostazione grafica (puramente estetica) che imposta il padding
+ * e l'altezza di ogni fieldset. Ma soprattutto toglie i classici bordi fissi dell'elemento
+ * introducendo un bordo "bottom" puntinato e gradevole 
+ * (quindi una riga puntinata sottile come divisore tra una riga ed un'altra)
+ */
+fieldset {
+    border: 0px;
+    border-bottom: 1px dotted #dcdcdc;
+    padding: 10px;
+    height: 30px;
+}
 
+/*
+ * impostazione dei label del form:
+ * grassetto ; larghezza fissa per evitare distanze non omogenee; 
+ * float left per mettere a sinistra rispetto all'input
+ */
+label {
+    font-weight: bold;
+    width: 100px;
+    float: left;
+}
 
+/*
+ * campi di input del form impostati e posti "float:left" quindi conseguente ai 
+ * label
+ */
+input, textarea {
+    border: 1px solid #dcdcdc;
+    padding: 4px;
+    width: 240px;
+    color: #444;
+    float: left;
+}
+
+/*
+ * SEZIONE RELATIVA ALLA PRENOTAZIONE DELL'EVENTO E PIU' PRECISAMENTE
+ * AL LAYOUT DEL MENU A TENDINA (SELECT-OPTION)
+ * 
+ */
+.select_join {
+    width: 250px;
+    height: 28px;
+    overflow: hidden;
+    border: #BEBEBE 1px solid;
+    border-radius: 3px;
+    float: left;
+    font-size:medium;
+}
+
+/****************************FINE PAGINA DI PRENOTAZIONE***********************/
+
+/*
+ * stile dei bottoni social impostati fixed e quindi rispetto al body
+ */
 .classIconeSocial{
     position: fixed;
     right: 50px;
     top: 200px
 }
+
 
 /* 
     La proprietà di cui abbiamo bisogno è 

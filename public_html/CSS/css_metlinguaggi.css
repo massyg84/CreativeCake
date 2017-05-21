@@ -20,66 +20,20 @@ body{
 }
 
 /*
- *   customizziamo i link a colore nero, non sottolineati e non grassetto
+ *  In generale customizziamo i link a colore nero, non sottolineati e non grassetto
  */
 a{
     color: black;
     text-decoration:none;
     font-weight:lighter; 
 }
-/*
- *   impostiamo li in modo da avere una navigation bar in linea
- */       
-li.classOrizontalNav{
-    display: inline; 
-
-}
 
 /*
- *   Questa classe inserisce gli spazi nella navigation bar
+ *   classe generica per gli h1
  */
-.classSpan {
-    margin-left: 17px;
-    margin-right: 17px;
-}
-
-
-/*
- *   classe relativa alle immagini prima di header e dopo il footer
- */
-.classH1{
-    background-image: url(../Img/immagine_sfondo.jpg);
-    background-repeat: repeat-x;
-    width: 100%;
-    height: 115px;
-}
-
-/*
-*   TODO bisogna mettere la classe e non generalizzare gli h1
-*/
 h1{
     text-align: center;
     margin: 50px;
-}
-
-fieldset {
-    clear: left;
-    border: 0px;
-    border-bottom: 1px dotted #dcdcdc;
-    padding: 10px;
-    height: 30px;
-}
-label {
-    font-weight: bold;
-    width: 100px;
-    float: left;
-}
-input, textarea {
-    border: 1px solid #dcdcdc;
-    padding: 4px;
-    width: 240px;
-    color: #444;
-    float: left;
 }
 
 .classHPink{
@@ -155,19 +109,6 @@ input, textarea {
     /*border: dotted;*/
 }
 
-/*
- SEZIONE RELATIVA ALLA PRENOTAZIONE DELL'EVENTO E PIU' PRECISAMENTE
- AL LAYOUT DEL MENU A TENDINA (SELECT-OPTION)
-*/
-.select_join {
-    width: 250px;
-    height: 28px;
-    overflow: hidden;
-    border: #BEBEBE 1px solid;
-    border-radius: 3px;
-    float: left;
-    font-size:medium;
-}
 .classDivContatti{
     /*border: dotted;*/
     margin-top: 25px;
