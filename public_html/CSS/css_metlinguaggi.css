@@ -1,4 +1,16 @@
 /*
+classe per la modifica del menu on mouse over
+*/
+a:hover.menu{
+    color: #ffb3b3;
+}
+
+menu{
+    color: black;
+}
+
+
+/*
 in questo modo si può definire 
 una classe con uno stesso stile 
 per l'elemento img     

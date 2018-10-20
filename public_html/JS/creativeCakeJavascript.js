@@ -217,3 +217,10 @@ function modifica_didascalia(contatore) {
 }
 
 
+//CAMBIA COLORE QUANDO PASSI SUI LABEL DEL MENU
+function cambiaColore(){
+    
+    
+    
+}
+
