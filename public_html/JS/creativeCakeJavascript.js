@@ -37,7 +37,7 @@ function valida_e_prenota_form() {
             return prenotazione;
         }
         
-        
+
         /*
          * Opero anche una validazione relativa al numero di telefono
          * ci sono molti modi per validare il pattern del numero di telefono
